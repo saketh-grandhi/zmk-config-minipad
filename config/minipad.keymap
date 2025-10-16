@@ -8,8 +8,14 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &kp C_AL_LOCK &kp ESC &kp LALT &kp W &kp TAB &kp A &kp S &kp D
+                &lt 1 C_AL_LOCK &kp ESC &kp LALT &kp W &kp TAB &kp A &kp S &kp D
             >;
         };
-    };
+
+        bt_layer {
+			display-name = "Bluetooth";
+			bindings = <
+            &trans &kp BT_CLR &kp BT_SEL 1 &kp BT_SEL 2 &kp BT_SEL 3 &trans &trans &trans    
+        };
+    }
 };
