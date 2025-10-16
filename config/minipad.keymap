@@ -8,7 +8,7 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &lt 1 C_AL_LOCK &kp ESC &kp LALT &kp W &kp TAB &kp A &kp S &kp D
+                &kp LEFT_GUI &kp ESC &kp LALT &kp W &kp TAB &lt 1 A &kp S &kp D
             >;
         };
 
