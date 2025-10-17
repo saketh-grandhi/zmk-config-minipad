@@ -9,7 +9,7 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &kp LEFT_GUI &kp ESC &kp LALT &kp W &kp TAB &lt 1 A &kp S &kp D &kp K_PP
+                &kp LEFT_GUI &kp ESC &kp LALT &kp W &kp TAB &lt 1 A &kp S &kp D &kp K_PLAY_PAUSE
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
