@@ -18,9 +18,8 @@
             , <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
     };
-};
 
-/ {
+{
     matrix_transform0: matrix_transform0 {
         compatible = "zmk,matrix-transform";
         columns = <8>;
@@ -36,7 +35,7 @@
     transform = <&matrix_transform0>;
 };
 
-encoder: encoder {
+left_encoder: encoder_left {
     compatible = "alps,ec11";
     a-gpios = <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     b-gpios = <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
@@ -46,6 +45,7 @@ encoder: encoder {
 
 sensors: sensors {
     compatible = "zmk,keymap-sensors";
-    sensors = <&encoder>;
+    sensors = <&left_encoder>;
     triggers-per-rotation = <20>;
+};
 };

@@ -11,6 +11,7 @@
             bindings = <
                 &kp LEFT_GUI &kp ESC &kp LALT &kp W &kp TAB &lt 1 A &kp S &kp D &kp K_PP
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         bt_layer {
@@ -19,8 +20,5 @@
                 &trans &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &trans &trans &trans &trans
             >;        
         };
-    };
-        encoder {
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
 };
