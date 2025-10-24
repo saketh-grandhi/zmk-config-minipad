@@ -48,7 +48,7 @@
 
         extra2 {
             status = "reserved";
-            sensor-bindings = <&mouse_scroll MOVE_DOWN MOVE_UP>;
+            sensor-bindings = <&mouse_scroll MOVE_UP MOVE_DOWN>;
         };
     };
 };
