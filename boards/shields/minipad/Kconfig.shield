@@ -1,5 +1,5 @@
 config SHIELD_MINIPAD
     def_bool $(shields_list_contains,minipad)
 
-config SHIELD_MINIPAD
+config SHIELD_MINIPAD_DONGLE
     def_bool $(shields_list_contains,minipad_dongle)
