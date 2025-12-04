@@ -2,7 +2,6 @@
 #include "minipad-layouts.dtsi"
 
 &physical_layout_minipad {
-    kscan = <&kscan0>;
     transform = <&matrix_transform0>;
 };
 
