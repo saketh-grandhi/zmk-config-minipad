@@ -22,16 +22,16 @@
                 >;
     };
 
-    #import "my_keyboard-layouts.dtsi"
+    #import "minipad-layouts.dtsi"
 
-        &physical_layout0 {
+        &physical_layout_minipad {
              transform = <&matrix_transform0>;
     };
 
     / {
         chosen {
             zmk,kscan = &mock_kscan;
-            zmk,physical-layout = &physical_layout0;
+            zmk,physical-layout = &physical_layout_minipad;
         };
     };
 };
